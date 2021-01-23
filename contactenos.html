@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title> Actividad 1 </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/estilos.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/menu.css'>
+        <!--script src='main.js'></script>-->
+    </head>
+    <body>
+        
+        <nav> 
+            <ul class="menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="./imgs/logo.png">
+                        </a>
+                 </li>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./contactenos.html">Contactenos</a></li>
+                    <li>
+                        <a href="#"> Materias</a>
+                        <!--Menu desplegable -->
+                        <ul>
+                            <li><a href="#">PHP </a> </li>
+                            <li><a href="#">CSS </a> </li>
+                            <li><a href="#">Java Script </a></li>
+                        </ul>
+                        <!--Fin Menu desplegable-->
+                    </li>
+            </ul>
+        </nav>
+
+        <div class="container"> 
+
+            <h1> Personajes de Rick and Morty </h1>
+<!--Inicia formulario-->
+            <div>
+                <form>
+                    <div class="section-flex">
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="type"> Tipo de mensaje</label>
+                            </div>
+                            <select id="type" name="type" required >
+                                <option value=""> Selecciona una opción </option>
+                                <option value="Cotización"> Cotización </option>
+                                <option value="Saludo"> Saludo </option>
+                                <option value="Queja"> Queja </option>
+                                
+                            </select>
+                        </div>
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="name"> Nombres </label>
+                            </div>
+                            <input type="text" id="name" name="Nombres" placeholder="Ingrese nombre completo" required>
+                        </div>
+
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="E-mail"> Correo electrónico </label>
+                            </div>
+                            <input type="text" id="E-mail" name="E-mail" placeholder="micorreo@correo.com"required>
+                        </div>
+
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="celular"> Celular </label>
+                            </div>
+                            <input type="number" id="celular" name="celular" placeholder="Ingrese su número celular" required>
+                        </div>
+
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="comment"> Comentario </label>
+                            </div>
+                            <textarea id="comment" name="comment"  placeholder="Ingrese su comentario" required></textarea>
+                                                        
+                        </div>
+
+                        <div class="element-flex">
+                            <div><label for="Genero">Genero</label>
+                            </div>
+                            <input type="checkbox" id="checkbox1" value="Femenino">Femenino
+                            <input type="checkbox" id="checkbox2" value="Masculino">Masculino
+                        </div>
+
+                        <div class="element-flex">
+                            <div><label for="Lenguajes de programación"> Lenguajes de programación que conoce</label></div>
+                            <input type="checkbox" id="checkbox1" value="Html">Html
+                            <input type="checkbox" id="checkbox2" value="CSS">CSS
+                            <input type="checkbox" id="checkbox3" value="JavaScript">JAVA
+                        </div>
+
+                        <div class="element-flex">
+                            <div><label for="Lenguajes de programación"> Lenguajes de programación que conoce</label></div>
+                            <input type="radio" id="radio1" value="Html">Html
+                            <input type="radio" id="radio2" value="CSS">CSS
+                            <input type="radio" id="radio3" value="JavaScript">JAVA
+                        </div>
+
+                        <div class="btn-div">
+                            <button type="submit" >Enviar datos </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+         
+        </div>
+
+        <footer>
+            <p><b>Creado por Paola Gavilán</b></p>
+        </footer>
+        
+        
+        
+    </body>
+</html>
