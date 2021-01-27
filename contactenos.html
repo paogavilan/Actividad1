@@ -38,13 +38,13 @@
             <h1> Personajes de Rick and Morty </h1>
 <!--Inicia formulario-->
             <div>
-                <form>
+                <form method="POST">
                     <div class="section-flex">
                         <div class="element-flex">
                             <div class="label">
                                 <label for="type"> Tipo de mensaje</label>
                             </div>
-                            <select id="type" name="type" required >
+                            <select id="type" name="type" >
                                 <option value=""> Selecciona una opción </option>
                                 <option value="Cotización"> Cotización </option>
                                 <option value="Saludo"> Saludo </option>
@@ -56,28 +56,28 @@
                             <div class="label">
                                 <label for="name"> Nombres </label>
                             </div>
-                            <input type="text" id="name" name="Nombres" placeholder="Ingrese nombre completo" required>
+                            <input type="text" id="name" name="Nombres" placeholder="Ingrese nombre completo" >
                         </div>
 
                         <div class="element-flex">
                             <div class="label">
                                 <label for="E-mail"> Correo electrónico </label>
                             </div>
-                            <input type="text" id="E-mail" name="E-mail" placeholder="micorreo@correo.com"required>
+                            <input type="text" id="E-mail" name="E-mail" placeholder="micorreo@correo.com">
                         </div>
 
                         <div class="element-flex">
                             <div class="label">
                                 <label for="celular"> Celular </label>
                             </div>
-                            <input type="number" id="celular" name="celular" placeholder="Ingrese su número celular" required>
+                            <input type="number" id="celular" name="celular" placeholder="Ingrese su número celular">
                         </div>
 
                         <div class="element-flex">
                             <div class="label">
                                 <label for="comment"> Comentario </label>
                             </div>
-                            <textarea id="comment" name="comment"  placeholder="Ingrese su comentario" required></textarea>
+                            <textarea id="comment" name="comment"  placeholder="Ingrese su comentario" ></textarea>
                                                         
                         </div>
 
@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="btn-div">
-                            <button type="submit" >Enviar datos </button>
+                            <button type="submit" onclick="validacioncampos()">Enviar datos </button>
                         </div>
                     </div>
                 </form>
@@ -114,6 +114,7 @@
         <footer>
             <p><b>Creado por Paola Gavilán</b></p>
         </footer>
+        <script src="./js/javascript.js"></script>
         
         
         
