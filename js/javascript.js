@@ -4,6 +4,7 @@ function validacioncampos() {
     var tipodemensaje= document.getElementById('type').value;
     var email= document.getElementById('E-mail').value;
     var celular= document.getElementById('celular').value;
+    var comentario= document.getElementById('comment').value
     var mensaje = "";
 
     /*if (tipodemensaje =="") {
@@ -29,5 +30,8 @@ function validacioncampos() {
         }
         if (celular == ""){
             mensaje += "\nDebe llenar el campo celular"
+        }
+        if (comentario == ""){
+            mensaje += "\nDebe llenar este campo"
         }
         alert(mensaje);} }
